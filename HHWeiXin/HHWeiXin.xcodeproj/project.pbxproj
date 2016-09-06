@@ -17,6 +17,10 @@
 		EC99346F1D7E5BC000B5E958 /* HHAppDelegate+Appservice.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9934691D7E5BC000B5E958 /* HHAppDelegate+Appservice.m */; };
 		EC9934701D7E5BC000B5E958 /* HHAppDelegate+rootController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC99346B1D7E5BC000B5E958 /* HHAppDelegate+rootController.m */; };
 		EC9934711D7E5BC000B5E958 /* HHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC99346D1D7E5BC000B5E958 /* HHAppDelegate.m */; };
+		ECD3190F1D7EA01000D6423E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD3190E1D7EA01000D6423E /* UIView+Extension.m */; };
+		ECD319151D7EA0AA00D6423E /* HHServeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD319141D7EA0AA00D6423E /* HHServeManager.m */; };
+		ECD319211D7EA25D00D6423E /* HHUserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD319201D7EA25D00D6423E /* HHUserAccount.m */; };
+		ECD319241D7EA27C00D6423E /* HHUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD319231D7EA27C00D6423E /* HHUserInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,20 @@
 		EC99346B1D7E5BC000B5E958 /* HHAppDelegate+rootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HHAppDelegate+rootController.m"; sourceTree = "<group>"; };
 		EC99346C1D7E5BC000B5E958 /* HHAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAppDelegate.h; sourceTree = "<group>"; };
 		EC99346D1D7E5BC000B5E958 /* HHAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAppDelegate.m; sourceTree = "<group>"; };
+		ECD319011D7E9C7900D6423E /* HHPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHPrefixHeader.pch; sourceTree = "<group>"; };
+		ECD319081D7E9E9400D6423E /* CommonAppKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonAppKey.h; sourceTree = "<group>"; };
+		ECD319091D7E9E9400D6423E /* CommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
+		ECD3190A1D7E9E9400D6423E /* HttpURLDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpURLDefine.h; sourceTree = "<group>"; };
+		ECD3190D1D7EA01000D6423E /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		ECD3190E1D7EA01000D6423E /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		ECD319111D7EA03C00D6423E /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		ECD319121D7EA07F00D6423E /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		ECD319131D7EA0AA00D6423E /* HHServeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHServeManager.h; sourceTree = "<group>"; };
+		ECD319141D7EA0AA00D6423E /* HHServeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHServeManager.m; sourceTree = "<group>"; };
+		ECD3191F1D7EA25D00D6423E /* HHUserAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUserAccount.h; sourceTree = "<group>"; };
+		ECD319201D7EA25D00D6423E /* HHUserAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUserAccount.m; sourceTree = "<group>"; };
+		ECD319221D7EA27C00D6423E /* HHUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUserInfo.h; sourceTree = "<group>"; };
+		ECD319231D7EA27C00D6423E /* HHUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUserInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				EC9934651D7E5BC000B5E958 /* AppDelegate */,
-				EC4828621D7AD357000988E3 /* HHWeiXin */,
 				EC48287C1D7AD357000988E3 /* HHWeiXinTests */,
 				EC4828871D7AD357000988E3 /* HHWeiXinUITests */,
 				EC4828611D7AD357000988E3 /* Products */,
@@ -108,16 +125,18 @@
 		EC4828621D7AD357000988E3 /* HHWeiXin */ = {
 			isa = PBXGroup;
 			children = (
-				EC9934721D7E75ED00B5E958 /* Classes */,
-				EC9934841D7E762700B5E958 /* Lib */,
 				EC9934831D7E760A00B5E958 /* Config */,
+				EC9934721D7E75ED00B5E958 /* Classes */,
+				ECD319171D7EA1B900D6423E /* Libs */,
+				ECD319161D7EA17200D6423E /* SDKFile(集成) */,
 				EC48286C1D7AD357000988E3 /* Main.storyboard */,
 				EC48286F1D7AD357000988E3 /* Assets.xcassets */,
 				EC4828711D7AD357000988E3 /* LaunchScreen.storyboard */,
 				EC4828741D7AD357000988E3 /* Info.plist */,
 				EC4828631D7AD357000988E3 /* Supporting Files */,
 			);
-			path = HHWeiXin;
+			name = HHWeiXin;
+			path = ../HHWeiXin;
 			sourceTree = "<group>";
 		};
 		EC4828631D7AD357000988E3 /* Supporting Files */ = {
@@ -149,14 +168,15 @@
 		EC9934651D7E5BC000B5E958 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				EC99346C1D7E5BC000B5E958 /* HHAppDelegate.h */,
+				EC99346D1D7E5BC000B5E958 /* HHAppDelegate.m */,
 				EC9934661D7E5BC000B5E958 /* HHAppDelegate+AppLifeCircle.h */,
 				EC9934671D7E5BC000B5E958 /* HHAppDelegate+AppLifeCircle.m */,
 				EC9934681D7E5BC000B5E958 /* HHAppDelegate+Appservice.h */,
 				EC9934691D7E5BC000B5E958 /* HHAppDelegate+Appservice.m */,
 				EC99346A1D7E5BC000B5E958 /* HHAppDelegate+rootController.h */,
 				EC99346B1D7E5BC000B5E958 /* HHAppDelegate+rootController.m */,
-				EC99346C1D7E5BC000B5E958 /* HHAppDelegate.h */,
-				EC99346D1D7E5BC000B5E958 /* HHAppDelegate.m */,
+				EC4828621D7AD357000988E3 /* HHWeiXin */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -164,7 +184,9 @@
 		EC9934721D7E75ED00B5E958 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				ECD3191E1D7EA24A00D6423E /* UserInfo */,
 				EC9934851D7E765400B5E958 /* Base */,
+				ECD3191A1D7EA21A00D6423E /* 注册 登录 */,
 				EC9934731D7E75ED00B5E958 /* Contacter */,
 				EC9934771D7E75ED00B5E958 /* Discover */,
 				EC99347B1D7E75ED00B5E958 /* Home */,
@@ -300,15 +322,14 @@
 		EC9934831D7E760A00B5E958 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				ECD319011D7E9C7900D6423E /* HHPrefixHeader.pch */,
+				ECD319101D7EA03C00D6423E /* Const(常量) */,
+				ECD319061D7E9E9400D6423E /* Category(分类) */,
+				ECD319071D7E9E9400D6423E /* Marcos(宏) */,
+				ECD3190B1D7E9E9400D6423E /* Network(网络) */,
+				ECD3190C1D7E9E9400D6423E /* Tool(工具) */,
 			);
 			path = Config;
-			sourceTree = "<group>";
-		};
-		EC9934841D7E762700B5E958 /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Lib;
 			sourceTree = "<group>";
 		};
 		EC9934851D7E765400B5E958 /* Base */ = {
@@ -340,6 +361,122 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		ECD319061D7E9E9400D6423E /* Category(分类) */ = {
+			isa = PBXGroup;
+			children = (
+				ECD3190D1D7EA01000D6423E /* UIView+Extension.h */,
+				ECD3190E1D7EA01000D6423E /* UIView+Extension.m */,
+			);
+			path = "Category(分类)";
+			sourceTree = "<group>";
+		};
+		ECD319071D7E9E9400D6423E /* Marcos(宏) */ = {
+			isa = PBXGroup;
+			children = (
+				ECD319121D7EA07F00D6423E /* Singleton.h */,
+				ECD319081D7E9E9400D6423E /* CommonAppKey.h */,
+				ECD319091D7E9E9400D6423E /* CommonDefine.h */,
+				ECD3190A1D7E9E9400D6423E /* HttpURLDefine.h */,
+			);
+			path = "Marcos(宏)";
+			sourceTree = "<group>";
+		};
+		ECD3190B1D7E9E9400D6423E /* Network(网络) */ = {
+			isa = PBXGroup;
+			children = (
+				ECD319131D7EA0AA00D6423E /* HHServeManager.h */,
+				ECD319141D7EA0AA00D6423E /* HHServeManager.m */,
+			);
+			path = "Network(网络)";
+			sourceTree = "<group>";
+		};
+		ECD3190C1D7E9E9400D6423E /* Tool(工具) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Tool(工具)";
+			sourceTree = "<group>";
+		};
+		ECD319101D7EA03C00D6423E /* Const(常量) */ = {
+			isa = PBXGroup;
+			children = (
+				ECD319111D7EA03C00D6423E /* Constants.h */,
+			);
+			path = "Const(常量)";
+			sourceTree = "<group>";
+		};
+		ECD319161D7EA17200D6423E /* SDKFile(集成) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "SDKFile(集成)";
+			sourceTree = "<group>";
+		};
+		ECD319171D7EA1B900D6423E /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				ECD319181D7EA1B900D6423E /* Frameworks */,
+				ECD319191D7EA1B900D6423E /* Others */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		ECD319181D7EA1B900D6423E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECD319191D7EA1B900D6423E /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		ECD3191A1D7EA21A00D6423E /* 注册 登录 */ = {
+			isa = PBXGroup;
+			children = (
+				ECD3191B1D7EA21A00D6423E /* Controller */,
+				ECD3191C1D7EA21A00D6423E /* Model */,
+				ECD3191D1D7EA21A00D6423E /* View */,
+			);
+			path = "注册 登录";
+			sourceTree = "<group>";
+		};
+		ECD3191B1D7EA21A00D6423E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ECD3191C1D7EA21A00D6423E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ECD3191D1D7EA21A00D6423E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECD3191E1D7EA24A00D6423E /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				ECD3191F1D7EA25D00D6423E /* HHUserAccount.h */,
+				ECD319201D7EA25D00D6423E /* HHUserAccount.m */,
+				ECD319221D7EA27C00D6423E /* HHUserInfo.h */,
+				ECD319231D7EA27C00D6423E /* HHUserInfo.m */,
+			);
+			path = UserInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,6 +546,7 @@
 				TargetAttributes = {
 					EC48285F1D7AD357000988E3 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5A6VDQMQ4A;
 					};
 					EC4828781D7AD357000988E3 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -472,11 +610,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD3190F1D7EA01000D6423E /* UIView+Extension.m in Sources */,
 				EC99346E1D7E5BC000B5E958 /* HHAppDelegate+AppLifeCircle.m in Sources */,
+				ECD319241D7EA27C00D6423E /* HHUserInfo.m in Sources */,
 				EC99346F1D7E5BC000B5E958 /* HHAppDelegate+Appservice.m in Sources */,
 				EC9934701D7E5BC000B5E958 /* HHAppDelegate+rootController.m in Sources */,
 				EC9934711D7E5BC000B5E958 /* HHAppDelegate.m in Sources */,
 				EC4828651D7AD357000988E3 /* main.m in Sources */,
+				ECD319211D7EA25D00D6423E /* HHUserAccount.m in Sources */,
+				ECD319151D7EA0AA00D6423E /* HHServeManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,10 +761,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "/Users/juzhi/Desktop/新的项目/weiXin/HHWeiXin/HHWeiXin/Config/HHPrefixHeader.pch";
 				INFOPLIST_FILE = HHWeiXin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LL.HHWeiXin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -630,10 +776,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "/Users/juzhi/Desktop/新的项目/weiXin/HHWeiXin/HHWeiXin/Config/HHPrefixHeader.pch";
 				INFOPLIST_FILE = HHWeiXin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LL.HHWeiXin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

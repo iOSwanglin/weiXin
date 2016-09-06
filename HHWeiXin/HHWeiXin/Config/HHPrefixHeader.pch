@@ -1,0 +1,29 @@
+//
+//  HHPrefixHeader.pch
+//  HHWeiXin
+//
+//  Created by 聚智 on 16/9/6.
+//  Copyright © 2016年 聚智. All rights reserved.
+//
+
+#ifndef HHPrefixHeader_pch
+#define HHPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "HHAppDelegate.h"
+#import "HHAppDelegate+Appservice.h"
+#import "HHAppDelegate+AppLifeCircle.h"
+#import "HHAppDelegate+rootController.h"
+
+
+#import "HHServeManager.h"
+
+
+
+
+#import "HHUserAccount.h"
+#import "HHUserInfo.h"
+
+#endif /* HHPrefixHeader_pch */
