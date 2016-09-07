@@ -11,6 +11,22 @@
 @implementation HHAppDelegate
 
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+  
+    
+#ifdef DEBUG
+    [[HHServeManager sharedHHServeManager]serveConfig:HHServeStateDebug];
+#else
+    [[HHServeManager sharedHHServeManager]serveConfig:HHServeStateRelease];
+#endif
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    
+//    self.window.rootViewController = [[HHHomeViewController alloc]init];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    [self.window makeKeyWindow];
+    
     
    return YES;
 }

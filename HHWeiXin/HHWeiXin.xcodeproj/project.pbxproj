@@ -21,6 +21,8 @@
 		ECD319151D7EA0AA00D6423E /* HHServeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD319141D7EA0AA00D6423E /* HHServeManager.m */; };
 		ECD319211D7EA25D00D6423E /* HHUserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD319201D7EA25D00D6423E /* HHUserAccount.m */; };
 		ECD319241D7EA27C00D6423E /* HHUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD319231D7EA27C00D6423E /* HHUserInfo.m */; };
+		ECD319271D7EABA100D6423E /* HHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD319261D7EABA100D6423E /* HHBaseViewController.m */; };
+		ECD3192A1D7EABC800D6423E /* HHHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD319291D7EABC800D6423E /* HHHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,10 @@
 		ECD319201D7EA25D00D6423E /* HHUserAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUserAccount.m; sourceTree = "<group>"; };
 		ECD319221D7EA27C00D6423E /* HHUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUserInfo.h; sourceTree = "<group>"; };
 		ECD319231D7EA27C00D6423E /* HHUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUserInfo.m; sourceTree = "<group>"; };
+		ECD319251D7EABA100D6423E /* HHBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHBaseViewController.h; sourceTree = "<group>"; };
+		ECD319261D7EABA100D6423E /* HHBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHBaseViewController.m; sourceTree = "<group>"; };
+		ECD319281D7EABC800D6423E /* HHHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHHomeViewController.h; sourceTree = "<group>"; };
+		ECD319291D7EABC800D6423E /* HHHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHHomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				EC9934651D7E5BC000B5E958 /* AppDelegate */,
+				EC4828621D7AD357000988E3 /* HHWeiXin */,
 				EC48287C1D7AD357000988E3 /* HHWeiXinTests */,
 				EC4828871D7AD357000988E3 /* HHWeiXinUITests */,
 				EC4828611D7AD357000988E3 /* Products */,
@@ -135,8 +142,7 @@
 				EC4828741D7AD357000988E3 /* Info.plist */,
 				EC4828631D7AD357000988E3 /* Supporting Files */,
 			);
-			name = HHWeiXin;
-			path = ../HHWeiXin;
+			path = HHWeiXin;
 			sourceTree = "<group>";
 		};
 		EC4828631D7AD357000988E3 /* Supporting Files */ = {
@@ -176,7 +182,6 @@
 				EC9934691D7E5BC000B5E958 /* HHAppDelegate+Appservice.m */,
 				EC99346A1D7E5BC000B5E958 /* HHAppDelegate+rootController.h */,
 				EC99346B1D7E5BC000B5E958 /* HHAppDelegate+rootController.m */,
-				EC4828621D7AD357000988E3 /* HHWeiXin */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -187,9 +192,9 @@
 				ECD3191E1D7EA24A00D6423E /* UserInfo */,
 				EC9934851D7E765400B5E958 /* Base */,
 				ECD3191A1D7EA21A00D6423E /* 注册 登录 */,
+				EC99347B1D7E75ED00B5E958 /* Home */,
 				EC9934731D7E75ED00B5E958 /* Contacter */,
 				EC9934771D7E75ED00B5E958 /* Discover */,
-				EC99347B1D7E75ED00B5E958 /* Home */,
 				EC99347F1D7E75ED00B5E958 /* Main */,
 			);
 			path = Classes;
@@ -270,6 +275,8 @@
 		EC99347C1D7E75ED00B5E958 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				ECD319281D7EABC800D6423E /* HHHomeViewController.h */,
+				ECD319291D7EABC800D6423E /* HHHomeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -345,6 +352,8 @@
 		EC9934861D7E765400B5E958 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				ECD319251D7EABA100D6423E /* HHBaseViewController.h */,
+				ECD319261D7EABA100D6423E /* HHBaseViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -615,8 +624,10 @@
 				ECD319241D7EA27C00D6423E /* HHUserInfo.m in Sources */,
 				EC99346F1D7E5BC000B5E958 /* HHAppDelegate+Appservice.m in Sources */,
 				EC9934701D7E5BC000B5E958 /* HHAppDelegate+rootController.m in Sources */,
+				ECD319271D7EABA100D6423E /* HHBaseViewController.m in Sources */,
 				EC9934711D7E5BC000B5E958 /* HHAppDelegate.m in Sources */,
 				EC4828651D7AD357000988E3 /* main.m in Sources */,
+				ECD3192A1D7EABC800D6423E /* HHHomeViewController.m in Sources */,
 				ECD319211D7EA25D00D6423E /* HHUserAccount.m in Sources */,
 				ECD319151D7EA0AA00D6423E /* HHServeManager.m in Sources */,
 			);
@@ -765,6 +776,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "/Users/juzhi/Desktop/新的项目/weiXin/HHWeiXin/HHWeiXin/Config/HHPrefixHeader.pch";
 				INFOPLIST_FILE = HHWeiXin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LL.HHWeiXin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -780,6 +792,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "/Users/juzhi/Desktop/新的项目/weiXin/HHWeiXin/HHWeiXin/Config/HHPrefixHeader.pch";
 				INFOPLIST_FILE = HHWeiXin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LL.HHWeiXin;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -10,4 +10,8 @@
 
 @implementation HHAppDelegate (AppLifeCircle)
 
+
+//-(void)applicationDidFinishLaunching:(UIApplication *)application
+
+
 @end

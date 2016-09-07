@@ -10,4 +10,27 @@
 
 @implementation HHServeManager
 
+
+-(void)serveConfig:(HHServeState)state{
+    
+  
+    if (state == HHServeStateRelease) {
+        
+        self.KBaseURL = @"http://";
+        
+    }else if (state == HHServeStateDebug){
+        
+        self.KBaseURL = @"http://";
+        
+    }else if (state == HHServeStatePrepare){
+      
+        self.KBaseURL = @"http://";
+        
+    }
+    
+    
+}
+
+
+
 @end
